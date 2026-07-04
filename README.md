@@ -1,7 +1,7 @@
 
 ## Installation
 ```bash
-git clone https://github.com/Abhigyan076/discord-onliner/
+git clone https://github.com/Abhigyan076/discord-24x7-onliner/
 cd discord-onliner
 pip install -r requirements.txt
 python3 main.py
