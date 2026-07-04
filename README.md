@@ -1,10 +1,24 @@
 # discord-onliner
 ## Made by abhi
+import colorama
+from colorama import Fore
+colorama.init(autoreset=True)
 
-https://t.me/xoding
+ascii_art = [
+    " ▄▄▄▄▄▄▄    ▄▄▄▄▄▄▄    ▄▄   ▄▄   ▄▄▄▄▄▄▄ ",
+    "▐░░░░░░░▌  ▐░░░░░░░▌  ▐░░▌ ▐░░▌ ▐░░░░░░░▌",
+    "▐░█▀▀▀█░▌  ▐░█▀▀▀█░▌  ▐░█▀▀▀█░▌  ▀▀█░█▀▀ ",
+    "▐░█▄▄▄█░▌  ▐░█▄▄▄█░▌  ▐░█   █░▌    ▐░▌   ",
+    "▐░░░░░░░▌  ▐░█▀▀▀█░▌  ▐░█   █░▌    ▐░▌   ",
+    "▐░█▀▀▀█░▌  ▐░█▄▄▄█░▌  ▐░█   █░▌  ▄▄█░█▄▄ ",
+    "▐░█   ▐░▌  ▐░░░░░░░▌  ▐░█   █░▌ ▐░░░░░░░▌",
+    " ▀     ▀    ▀▀▀▀▀▀▀    ▀     ▀   ▀▀▀▀▀▀▀ "
+]
 
-![Screenshot (91)](https://user-images.githubusercontent.com/69071809/184872137-1c7bcdde-954a-412a-a576-aecd7c536f70.png)
+colors = [Fore.RED, Fore.LIGHTRED_EX, Fore.YELLOW, Fore.GREEN, Fore.CYAN, Fore.BLUE, Fore.MAGENTA, Fore.LIGHTMAGENTA_EX]
 
+for i, line in enumerate(ascii_art):
+    print(colors[i % len(colors)] + line)
 ## Installation
 ```bash
 git clone https://github.com/Abhigyan076/discord-onliner/
